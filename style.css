@@ -1,20 +1,23 @@
-
 body {
     font-family: Arial, sans-serif;
-    color: #263A37;
-    background-color: #F5F7F2;
 }
-/* Navigation bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px ;
-    background-color: #FFFFFF;
+    padding: 20px;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
 }
 
 .logo {
-    color: #254D42;
+    color:white;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -27,7 +30,7 @@ body {
 }
 
 .nav-links a {
-    color: #344740;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }
@@ -36,36 +39,25 @@ body {
     color: #BD7548;
 }
 
-/* Main campus section */
 .hero {
+    position: relative;
     min-height: 690px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 20px;
+    padding: 100px 20px 70px;
+    box-sizing: border-box;
     text-align: center;
 
     background-image:
-        linear-gradient(
-            rgba(15, 35, 28, 0.40),
-            rgba(15, 35, 28, 0.55)
-        ),
-        url("images/home_background.jpeg");
-
+    url("images/home_background.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .hero-content {
     max-width: 850px;
     color: #FFFFFF;
-}
-
-.tagline {
-    font-size: 15px;
-    margin-bottom: 24px;
-    letter-spacing: 1px;
 }
 
 .hero h1 {
@@ -79,6 +71,7 @@ body {
     margin: 0 auto 30px;
     font-size: 17px;
     line-height: 1.7;
+    color:black
 }
 
 /* Main buttons */
@@ -90,84 +83,14 @@ body {
 }
 
 .button {
-    display: inline-block;
     padding: 14px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    transition: background-color 0.2s;
-}
-
-.primary-button {
-    color: #FFFFFF;
-    background-color: #B56D46;
-}
-
-.primary-button:hover {
     background-color: #965333;
+    color: white
 }
-
-.secondary-button {
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    background-color: transparent;
-}
-
-.secondary-button:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Footer */
-.footer {
-    padding: 22px;
-    text-align: center;
-    background-color: #FFFFFF;
-    font-size: 13px;
-}
-
-/* Smaller screens */
-@media (max-width: 700px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-        gap: 14px;
-    }
-
-    .hero {
-        min-height: 550px;
-        padding: 50px 20px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .description {
-        font-size: 15px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -202,6 +125,23 @@ ul{
     font-size: 20px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
